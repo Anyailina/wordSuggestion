@@ -16,7 +16,7 @@ public class WordSuggestionController {
          wordSuggestionService.addWord(phrase,translation);
     }
 
-    @GetMapping
+    @PostMapping
     @RequestMapping("/words")
     public List<WordSuggestionDto> getWords(@RequestBody  WordSuggestionDto wordSuggestionDto) {
         return wordSuggestionService.getWords(wordSuggestionDto.getPhrase());

@@ -18,17 +18,9 @@ spring:
   kafka:
     consumer:
       group-id: word
-      auto-offset-reset: earliest
       bootstrap-servers: localhost:9092
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.kafka.consumer.value-deserializer.trusted.packages: "*"
-        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+
 
 
 server:
   port: 8081
-
-topic:
-  name:
-    "addWord"

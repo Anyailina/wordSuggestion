@@ -20,7 +20,7 @@ public class WordSuggestionService {
             return;
         }
         WordSuggestion wordSuggestion = new WordSuggestion(phrase, translation);
-        WordSuggestion savedWordSuggestion = wordSuggestionRepository.save(wordSuggestion);
+        wordSuggestionRepository.save(wordSuggestion);
     }
 
     public WordSuggestionDto getWord(String word) {
