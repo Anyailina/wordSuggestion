@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 public class WordSuggestionConvertor {
 
     public WordSuggestionDto convert(WordSuggestion wordSuggestion) {
-        return new WordSuggestionDto(wordSuggestion.getId(), wordSuggestion.getPhrase(), wordSuggestion.getTranslation());
+        return new WordSuggestionDto(wordSuggestion.getPhrase(), wordSuggestion.getTranslation());
     }
 
     public WordSuggestion convert(WordSuggestionDto wordSuggestionDto) {
-        return new WordSuggestion(wordSuggestionDto.getId(), wordSuggestionDto.getPhrase(), wordSuggestionDto.getTranslation());
+        return new WordSuggestion(wordSuggestionDto.getPhrase(), wordSuggestionDto.getTranslation());
     }
 }

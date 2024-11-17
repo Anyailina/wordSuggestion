@@ -17,8 +17,6 @@ import java.util.Objects;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class WordSuggestionDto {
-    @EqualsAndHashCode.Exclude
-    private Long id;
     private String phrase;
     private String translation;
 }
